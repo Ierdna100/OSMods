@@ -5,11 +5,13 @@
       "id": "stubouk.always-show-needs",
       "displayName": "Always Show Needs",
       "tagline": "Always Show Needs",
-      "description": "Some description. Will probably eventually be markdown but not used so leave an empty string or something.",
+      "description": null,
       "owner": "StuboUK",
       "repository": "os-StubosAlwaysShowNeeds",
       "releases": {
-        "0.4.01": "0.1.0"
+        "0.4.01": [
+          "0.1.0"
+        ]
       },
       "dependencies": []
     }

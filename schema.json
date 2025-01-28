@@ -5,54 +5,66 @@
     "type": "object",
     "properties": {
         "mods": {
-            "description": "An array of mods declarations.",
-            "type": "object",
-            "properties": {
-                "id": {
-                    "description": "Unique identifier of your mod. It should preferably be in Reverse Domain Name notation and the same as your Harmony/BepInEx mod identifier.",
-                    "type": "string"
+            "description": "An array of mods declarations",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "Unique identifier of your mod. It should preferably be in Reverse Domain Name notation and the same as your Harmony/BepInEx mod identifier.",
+                        "type": "string"
+                    },
+                    "displayName": {
+                        "description": "The name the end-user will see.",
+                        "type": "string"
+                    },
+                    "tagline": {
+                        "description": "The slogan of your mod. It will appear near the title as a shorter description-like string.",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "The description of your mod. Currently unused.",
+                        "type": "null"
+                    },
+                    "owner": {
+                        "description": "Your Github name as it appears in a URL or on your profile.",
+                        "type": "string"
+                    },
+                    "repository": {
+                        "description": "The Github repository from which the releases should be taken from as it appears in the URL or in the title on the main page.",
+                        "type": "string"
+                    },
+                    "releases": {
+                        "description": "Dictionary of release tags. The keys represent the game versions with which a certain tag is compatible. Tags should follow Semantic Versioning so the manager can properly validate the version and use it to compare to other versions.",
+                        "type": "object",
+                        "properties": {
+                            "0.4.01": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                },
+                                "description": "Obenseuer Release on January 22nd 2025."
+                            }
+                        }
+                    },
+                    "dependencies": {
+                        "description": "Array of unique mod identifiers which should be downloaded and loaded first.",
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
                 },
-                "displayName": {
-                    "description": "The name the end-user will see.",
-                    "type": "string"
-                },
-                "tagline": {
-                    "description": "The slogan of your mod. It will appear near the title as a shorter description-like string.",
-                    "type": "string"
-                },
-                "description": {
-                    "description": "The description of your mod. Currently unused.",
-                    "type": "null"
-                },
-                "owner": {
-                    "description": "Your Github name as it appears in a URL or on your profile.",
-                    "type": "string"
-                },
-                "repository": {
-                    "description": "The Github repository from which the releases should be taken from as it appears in the URL or in the title on the main page.",
-                    "type": "string"
-                },
-                "releases": {
-                    "description": "Dictionary of release tags. The keys represent the game versions with which a certain tag is compatible. Tags should follow Semantic Versioning so the manager can properly validate the version and use it to compare to other versions.",
-                    "enum": [
-                        "0.4.01"
-                    ],
-                    "type": "object"
-                },
-                "dependencies": {
-                    "description": "Array of unique mod identifiers which should be downloaded and loaded first.",
-                    "type": "array"
-                }
-            },
-            "required": [
-                "id",
-                "displayName",
-                "tagline",
-                "owner",
-                "repository",
-                "releases",
-                "dependencies"
-            ]
+                "required": [
+                    "id",
+                    "displayName",
+                    "tagline",
+                    "owner",
+                    "repository",
+                    "releases",
+                    "dependencies"
+                ]
+            }
         }
     }
 }
