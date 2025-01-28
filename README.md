@@ -16,10 +16,8 @@ Structure of a mod:
     "releases": {
         // Dictionary of releases. The Keys represent game versions (below shown which are supported).
         // Values represent tags the manager should use to resolve the download link.
-      "0.3.22": "0.0.1",
-      "0.3.29": "0.0.2",
-      "0.3.33": "0.0.3",
-      "0.0.38": "0.0.4"
+        // Tags should follow Semantic Versioning (x.y.z) at all times so the manager can properly compare them.
+      "0.4.01": "1.0.0"
     },
     "dependencies": [ // An array of strings which represent unique identifiers for the mods so they can be loaded and downloaded first.
         "always-show-needs"
