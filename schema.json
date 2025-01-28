@@ -35,7 +35,7 @@
                         "type": "string"
                     },
                     "releases": {
-                        "description": "Dictionary of release tags. The keys represent the game versions with which a certain tag is compatible. Tags should follow Semantic Versioning so the manager can properly validate the version and use it to compare to other versions.",
+                        "description": "Dictionary of release tags. The keys represent the game versions with which a certain number of tags is compatible. Tags should follow Semantic Versioning so the manager can properly validate the version and use it to compare to other versions. You may support multiple versions of your mod per versions of the game, the user will be able to select them and the latest will be downloaded by default (which is why the SemVer tags are important).",
                         "type": "object",
                         "properties": {
                             "0.4.01": {
