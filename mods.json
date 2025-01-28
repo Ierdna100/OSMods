@@ -1,9 +1,9 @@
 [
   {
-    "id": "stubouk.always-show-needs"
+    "id": "stubouk.always-show-needs",
     "displayName": "Always Show Needs",
-    "tagline": "Always Show Needs", 
-    "description": "Some description. Will probably eventually be markdown but not used so leave an empty string or something." 
+    "tagline": "Always Show Needs",
+    "description": "Some description. Will probably eventually be markdown but not used so leave an empty string or something.",
     "owner": "StuboUK",
     "repository": "os-StubosAlwaysShowNeeds",
     "releases": {
