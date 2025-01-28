@@ -11,10 +11,11 @@ Structure of a mod:
     "displayName": "A Name The End-User Will See",
     "tagline": "Best Mod on the Market", // The user will see this below the mod's name.
     "description": "Some description. Will probably eventually be markdown but not used so leave an empty string or something." // Unused currently, I will see about doing this later because I have some ideas.
-    "latestVersionTag": "tag-release", // The Tag the manager should look for when resolving your download link. 
     "owner": "your-github-name", // Your Github name
     "repository": "repository-unique-identifier", // The repository name (the one used to clone it). 
-    "compatibilityVersionTags": { // Dictionary used to support previous versions of the game. The key corresponds to a certain version of the game we can rollback to (below are examples, none are currently supported) while the value is the tag the manager will look for to resolve the download link.
+    "releases": {
+        // Dictionary of releases. The Keys represent game versions (below shown which are supported).
+        // Values represent tags the manager should use to resolve the download link.
       "0.3.22": "0.0.1",
       "0.3.29": "0.0.2",
       "0.3.33": "0.0.3",
