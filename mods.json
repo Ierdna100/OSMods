@@ -1,14 +1,17 @@
-[
-  {
-    "id": "stubouk.always-show-needs",
-    "displayName": "Always Show Needs",
-    "tagline": "Always Show Needs",
-    "description": "Some description. Will probably eventually be markdown but not used so leave an empty string or something.",
-    "owner": "StuboUK",
-    "repository": "os-StubosAlwaysShowNeeds",
-    "releases": {
-      "0.4.01": "0.1.0"
-    },
-    "dependencies": []
-  }
-]
+{
+  "$schema": "https://raw.githubusercontent.com/Ierdna100/OSMods/refs/heads/main/schema.json",
+  "mods": [
+    {
+      "id": "stubouk.always-show-needs",
+      "displayName": "Always Show Needs",
+      "tagline": "Always Show Needs",
+      "description": "Some description. Will probably eventually be markdown but not used so leave an empty string or something.",
+      "owner": "StuboUK",
+      "repository": "os-StubosAlwaysShowNeeds",
+      "releases": {
+        "0.4.01": "0.1.0"
+      },
+      "dependencies": []
+    }
+  ]
+}
