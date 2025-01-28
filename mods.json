@@ -1,0 +1,15 @@
+[
+  {
+    "id": "always-show-needs"
+    "displayName": "Always Show Needs",
+    "tagline": "A BepInEx plugin for Obenseuer that modifies the visibility behavior of status/needs indicators."
+    "description": "Some description. Will probably eventually be markdown but not used so leave an empty string or something."
+    "latestVersionTag": "v0.1",
+    "owner": "StuboUK",
+    "repository": "os-StubosAlwaysShowNeeds",
+    "compatibilityVersionTags": {},
+    "dependencies": [
+        "always-show-needs-2"
+    ]
+  }
+]
