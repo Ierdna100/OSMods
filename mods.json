@@ -2,15 +2,27 @@
   "$schema": "https://raw.githubusercontent.com/Ierdna100/OSMods/refs/heads/main/schema.json",
   "mods": [
     {
+      "id": "stubouk.show-xp-gain",
+      "displayName": "Stubo's Show XP Gain",
+      "tagline": "Visual notifications when gaining skill XP",
+      "owner": "StuboUK",
+      "repository": "os-StubosShowXPGain",
+      "releases": {
+        "0.4.01": [
+          "0.1.0"
+        ]
+      },
+      "dependencies": []
+    },
+    {
       "id": "stubouk.always-show-needs",
-      "displayName": "Always Show Needs",
-      "tagline": "Always Show Needs",
-      "description": null,
+      "displayName": "Stubo's Always Show Needs",
+      "tagline": "Control needs visibility in the UI",
       "owner": "StuboUK",
       "repository": "os-StubosAlwaysShowNeeds",
       "releases": {
         "0.4.01": [
-          "0.1.0"
+          "0.2.0"
         ]
       },
       "dependencies": []
